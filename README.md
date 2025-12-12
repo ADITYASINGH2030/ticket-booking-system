@@ -6,7 +6,7 @@
 3. Set `REACT_APP_API_BASE` environment variable if backend is not at default.
 4. `npm start`
 
-## Notes
+
 - This is a minimal skeleton to be expanded. It contains example components and a pattern for
   fetching shows and booking seats.
 Ticket Booking System – Modex Assessment
