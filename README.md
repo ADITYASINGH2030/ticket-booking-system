@@ -1,2 +1,11 @@
-# ticket-booking-system
-A full-stack Ticket Booking System built for the Modex Assessment. Features high-concurrency seat booking with race-condition prevention, scalable Node.js + Postgres backend, and a React + TypeScript frontend with admin/user flows, real-time status, clean architecture, and clear system design.
+# Frontend - Ticket Booking System (Skeleton)
+
+## Setup (local)
+1. `cd frontend`
+2. `npm install`
+3. Set `REACT_APP_API_BASE` environment variable if backend is not at default.
+4. `npm start`
+
+## Notes
+- This is a minimal skeleton to be expanded. It contains example components and a pattern for
+  fetching shows and booking seats.

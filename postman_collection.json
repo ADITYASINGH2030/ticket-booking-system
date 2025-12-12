@@ -1,0 +1,71 @@
+{
+  "info": {
+    "name": "Ticket Booking API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create Show",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"name\": \"Demo Show\", \"startTime\": \"2025-12-20T10:00:00Z\", \"totalSeats\": 40}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/shows",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "shows"
+          ]
+        }
+      }
+    },
+    {
+      "name": "List Shows",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{baseUrl}}/api/shows"
+        }
+      }
+    },
+    {
+      "name": "Get Seats",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{baseUrl}}/api/shows/:id/seats"
+        }
+      }
+    },
+    {
+      "name": "Book Seats",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"userId\": \"demo\", \"showId\": \"<id>\", \"seatNos\": [\"1\", \"2\"]}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/bookings"
+        }
+      }
+    }
+  ]
+}
